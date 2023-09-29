@@ -1,0 +1,49 @@
+.x-products {   
+    background-color: #f5f5f5;
+    margin : 1rem 1rem;
+    input {
+        height: 40px;
+        border-radius: 0px !important; 
+    }
+
+    .x-shop {
+        button {
+            width: 150px;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+    }
+
+    .x-body-product {
+        background-color: white;
+    }
+
+    .x-head {
+        background: rgba(245, 245, 245, 0.75);
+        padding : 0.5rem 1rem;
+    }
+    .x-products-catalog {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    .x-btn-add{
+        background-color: #f5f5f5;
+        color: black;
+    }
+    .x-btn-sub{
+        background-color: #f5f5f5;
+        color: black;
+    }
+    .x-description-product {
+        margin-top: 4rem;
+        display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+    .centered {
+        display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+}

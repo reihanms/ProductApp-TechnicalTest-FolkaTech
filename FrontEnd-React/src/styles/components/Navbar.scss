@@ -1,0 +1,19 @@
+.x-sticky-navbar {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 100;
+  
+  .x-button-nav {
+    background: #EB3F36;  
+    border: none;
+    border-radius: 0px !important;
+    padding : 0.54rem 1rem
+  }
+  .x-navlink {
+    cursor: pointer;
+  }
+}

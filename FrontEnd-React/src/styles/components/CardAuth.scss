@@ -1,0 +1,20 @@
+.x-card-auth {
+    .x-header {
+        text-align: left;
+        color: #730C07;
+    }
+    .x-prev{
+        cursor: pointer ;
+        display: flex;
+        text-align: center;
+    }
+    .x-line {
+        height: 1px;
+        background-color: #C2C2C2;
+    }
+    .x-red-text {
+        color: #730C07;
+        font-weight: bold;
+        cursor: pointer;
+    }
+}
