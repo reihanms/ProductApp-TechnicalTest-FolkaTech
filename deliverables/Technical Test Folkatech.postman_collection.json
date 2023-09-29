@@ -1,0 +1,158 @@
+{
+	"info": {
+		"_postman_id": "d283fccd-598a-4077-b664-5b495f605771",
+		"name": "Technical Test Folkatech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21642442"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\" : \"test\",\r\n    \"last_name\" : \"user\",\r\n    \"email\" : \"asdc@gmail.com\",\r\n    \"number\" : \"08328092023\",\r\n    \"password\" : \"cek101\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpointFolka}}users/register",
+							"host": [
+								"{{endpointFolka}}users"
+							],
+							"path": [
+								"register"
+							]
+						},
+						"description": "Endpoint for register account for user"
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"host": true,
+							"user-agent": true,
+							"accept": true,
+							"accept-encoding": true,
+							"connection": true
+						}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\" : \"reihan@gmail.com\",\r\n    \"password\" : \"rairevans\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpointFolka}}users/login",
+							"host": [
+								"{{endpointFolka}}users"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get all user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpointFolka}}users/",
+							"host": [
+								"{{endpointFolka}}users"
+							],
+							"path": [
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Products",
+			"item": [
+				{
+					"name": "get all products",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJlbWFpbCI6InJlaWhhbkBnbWFpbC5jb20iLCJmaXJzdF9uYW1lIjoiUmVpaGFuIiwiaWF0IjoxNjk1OTY4NjEwLCJleHAiOjE2OTYwNTUwMTB9.ny9QPQdqhNfOo3Cf3GuWFOLkGL-P_F_PbcisdoJcQtc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "{{endpointFolka}}products/list-product",
+							"host": [
+								"{{endpointFolka}}products"
+							],
+							"path": [
+								"list-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get product detail",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJlbWFpbCI6InJlaWhhbkBnbWFpbC5jb20iLCJmaXJzdF9uYW1lIjoiUmVpaGFuIiwiaWF0IjoxNjk1OTY4NjEwLCJleHAiOjE2OTYwNTUwMTB9.ny9QPQdqhNfOo3Cf3GuWFOLkGL-P_F_PbcisdoJcQtc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{endpointFolka}}products/1",
+							"host": [
+								"{{endpointFolka}}products"
+							],
+							"path": [
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "endpointFolka",
+			"value": "http://localhost:4000/api/v1/"
+		}
+	]
+}
